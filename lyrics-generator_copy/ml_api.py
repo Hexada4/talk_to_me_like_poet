@@ -111,8 +111,8 @@ def predict():
     this function gets no arguments. It runs the model and get predict from it
     :return: prediction
     """
-    text = str(request.args['text'])
-    length = int(request.args['length'])
+    text = request.args['text']
+    length = request.args['length']
     answer = lyrics(model, tokenizer, text, length) # predicting...
     print('Generated', answer) # just logging, in future may be rewritten
     return answer

@@ -1,3 +1,5 @@
+-r lyrics-generator_copy/requirements.txt
+
 beautifulsoup4==4.12.2
 bs4==0.0.1
 certifi==2023.7.22
@@ -12,3 +14,4 @@ six==1.16.0
 soupsieve==2.4.1
 tzdata==2023.3
 urllib3==2.0.4
+

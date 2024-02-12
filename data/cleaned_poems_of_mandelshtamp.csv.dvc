@@ -1,0 +1,5 @@
+outs:
+- md5: 066229d2e53bd30fdd108b08ed8ebffe
+  size: 325231
+  hash: md5
+  path: cleaned_poems_of_mandelshtamp.csv

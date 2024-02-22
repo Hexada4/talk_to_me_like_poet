@@ -8,6 +8,8 @@ import numpy as np
 import tensorflow as tf
 import tensorflow_hub as hub
 import tensorflow_text
+from tensorflow.keras.callbacks import ModelCheckpoint, CSVLogger
+
 
 from . import config, embedding, util
 
@@ -340,6 +342,8 @@ def train(
         f"Running training with batch size {batch_size} and maximum epochs {max_epochs}"
     )
 
+        
+    
     # Run the training
     model.fit(
         np.array(X),

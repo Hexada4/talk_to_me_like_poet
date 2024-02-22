@@ -32,8 +32,8 @@ async def help_command(update: Update, context: ContextTypes.DEFAULT_TYPE) -> No
 
 async def get_prediction(update: Update, context: ContextTypes.DEFAULT_TYPE) -> None:
     """Echo the user message."""
-    link = 'http://127.0.0.1:8000/predict'
-    response = requests.get(f'http://127.0.0.1:8000/predict?text={str(update.message.text)}&length=20')
+    link = 'http://127.0.0.1:9000/predict'
+    response = requests.get(f'http://127.0.0.1:9000/predict?text={str(update.message.text)}&length=20')
     await update.message.reply_text(response.text)
 
 

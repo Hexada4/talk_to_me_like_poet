@@ -342,7 +342,9 @@ def train(
         f"Running training with batch size {batch_size} and maximum epochs {max_epochs}"
     )
 
-        
+    log_path = 'training_logs.csv' # file for logs
+    csv_logger_callback = CSVLogger(filename=log_path, separator=',', append=True) # Logger for loss
+
     
     # Run the training
     model.fit(

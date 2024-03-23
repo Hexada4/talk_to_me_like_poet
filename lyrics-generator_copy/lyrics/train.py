@@ -366,6 +366,7 @@ def train(
                 save_freq=save_freq,
                 verbose=1,
             ),
+	   csv_logger_callback
         ],
     )
 
